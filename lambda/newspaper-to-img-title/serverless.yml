@@ -1,0 +1,74 @@
+org: anastaciuswright
+app: newspaper-to-text
+service: newspaper-to-text
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+package:
+  exclude:
+    - .idea/**
+    - __pycache__/**
+    - .pytest_cache/**
+    - tesseract/**
+    - venv/**
+    - build_tesseract.sh
+    - Dockerfile
+    - lambda_event.json
+    - requirements.txt
+    - serverless.yml
+    - test.jpg
+    - test_handler.py
+    - use_ocr_as_a_service.py
+    - ocr-layer
+    - opencv-layer 
+    - ocr-layer/**
+    - opencv-layer/**
+
+layers:
+  OCR:
+    path: ocr-layer
+    name: ocr-layer
+    description: Layer with Tesseract
+    compatibleRuntimes:
+      - python3.9
+    retain: false
+    package:
+      include:
+      - tesseract
+  opencv:
+    path: opencv-layer
+    name: opencv-layer
+    description: Layer with OpenCV
+    compatibleRuntimes:
+      - python3.9
+    retain: false
+  
+
+functions:
+  ocr:
+    handler: handler.ocr
+    memorySize: 3008
+    timeout: 15
+    layers:
+      - {Ref: OCRLambdaLayer}
+    events:
+      - http:
+          path: ocr
+          method: post
+    package:
+      include:
+        - handler.py
+  opencv:
+    handler: opencv-handler.detect_title
+    memorySize: 3008
+    timeout: 15
+    layers:
+      - {Ref: OpencvLambdaLayer}
+    events:
+      - http:
+          path: /
+          method: get
+    
