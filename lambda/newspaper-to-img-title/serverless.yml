@@ -6,6 +6,17 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: python3.9
+  # s3 bucket
+  s3:
+    image_clarin_bucket:
+      name: clarin-image-bucket
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        # IAM permissions needed for uploading files
+        - 's3:PutObject'
+      Resource: "arn:aws:s3:::clarin-image-bucket/*"
+  
 
 package:
   exclude:
@@ -45,9 +56,31 @@ layers:
     compatibleRuntimes:
       - python3.9
     retain: false
+  scraper:
+    path: scraper-layer
+    name: scraper-layer
+    description: Layer with Beautifulsoup4
+    compatibleRuntimes:
+      - python3.9
+    retain: false
   
 
 functions:
+  pull_image:
+    handler: pull_image.pull_image
+    memorySize: 3000
+    timeout: 15
+    runtime: python3.9
+    layers:
+    - {Ref: ScraperLambdaLayer}
+    events:
+      - schedule: cron(0 18 * * ? *)
+      - http:
+          path: /pull-image
+          method: get
+          cors: true
+    environment:
+      BUCKET: arn:aws:s3:::clarin-image-bucket
   ocr:
     handler: handler.ocr
     memorySize: 3008
@@ -71,4 +104,9 @@ functions:
       - http:
           path: /
           method: get
-    
+      - s3:
+          bucket: clarin-image-bucket
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: front_pages/
+

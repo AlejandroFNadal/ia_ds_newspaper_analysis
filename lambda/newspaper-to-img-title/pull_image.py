@@ -34,7 +34,7 @@ def pull_image(event, context):
     img_binary = img_file.getvalue()
     # save img_binary to s3
     s3 = boto3.client('s3')
-    s3.put_object(Bucket='clarin-image-bucket', Key=today.strftime("%d-%m-%Y"), Body=img_binary)
+    s3.put_object(Bucket='clarin-image-bucket', Key=f"front_pages/{today.strftime('%d-%m-%Y')}.webp", Body=img_binary)
     # return the url of the image
     body = {
         "s3_url": s3_arn + '/' + today.strftime("%d-%m-%Y")
