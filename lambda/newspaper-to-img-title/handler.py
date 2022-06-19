@@ -29,6 +29,11 @@ def ocr(event, context):
         print('Opt doesnt exist')
     img_path = event['Records'][0]['s3']['object']['key']
     print('Image path: ' + img_path)
+    date_of_image = img_path.split('/')[1][:-5] # removing extension from file name
+    print('Date of image: ' + date_of_image)
+    date_object = datetime.datetime.strptime(date_of_image, '%d-%m-%Y')
+    print('Date object: ' + str(date_object))
+    
     s3_arn = 'arn:aws:s3:::clarin-image-bucket'
     s3 = boto3.client('s3')
     img_data = s3.get_object(Bucket='clarin-image-bucket', Key=img_path)['Body'].read()
@@ -81,27 +86,27 @@ def ocr(event, context):
         if 'Item' in response:
             item = response['Item']
             if 'dates' in item:
-                item['dates'].append(str(datetime.datetime.now().date()))
+                item['dates'].append(str(date_object.date()))
             else:
-                item['dates'] = [str(datetime.datetime.now().date())]
+                item['dates'] = [str(date_object.date())]
             if 'month_year' in item:
-                if str(datetime.datetime.now().month) + '-' + str(datetime.datetime.now().year) in item['month_year']:
-                    item['month_year'][str(datetime.datetime.now().month) + '-' + str(datetime.datetime.now().year)] += 1
+                if str(date_object.month) + '-' + str(date_object.year) in item['month_year']:
+                    item['month_year'][str(date_object.month) + '-' + str(date_object.year)] += 1
                 else:
-                    item['month_year'][str(datetime.datetime.now().month) + '-' + str(datetime.datetime.now().year)] = 1
+                    item['month_year'][str(date_object.month) + '-' + str(date_object.year)] = 1
             else:
-                item['month_year'] = {str(datetime.datetime.now().month) + '-' + str(datetime.datetime.now().year): 1}
+                item['month_year'] = {str(date_object.month) + '-' + str(date_object.year): 1}
             if 'year' in item:
-                if str(datetime.datetime.now().year) in item['year']:
-                    item['year'][str(datetime.datetime.now().year)] += 1
+                if str(date_object.year) in item['year']:
+                    item['year'][str(date_object.year)] += 1
                 else:
-                    item['year'][str(datetime.datetime.now().year)] = 1
+                    item['year'][str(date_object.year)] = 1
         else:
             item = {
                 'word': word,
-                'dates': [str(datetime.datetime.now().date())],
-                'month_year': {str(datetime.datetime.now().month) + '-' + str(datetime.datetime.now().year): 1},
-                'year': {str(datetime.datetime.now().year): 1}
+                'dates': [str(date_object.date())],
+                'month_year': {str(date_object.month) + '-' + str(date_object.year): 1},
+                'year': {str(date_object.year): 1}
             }
         #write item to db
         table.put_item(
