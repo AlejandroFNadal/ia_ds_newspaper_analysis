@@ -20,7 +20,10 @@ unzip tesseract/tesseract.zip -d layer
 mkdir -p layer/python/lib/python3.9/site-packages
 pip3 install pytesseract opencv-python -t layer/python/lib/python3.9/site-packages
 ```
-
+# Running OCR in local
+You cannot use the layers in local, so you need to install pytesseract. Dont forget to set the TESSDATA_PREFIX
+variable
+export TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
 # Serverless Framework Python HTTP API on AWS
 
 This template demonstrates how to make a simple HTTP API with Python running on AWS Lambda and API Gateway using the Serverless Framework.

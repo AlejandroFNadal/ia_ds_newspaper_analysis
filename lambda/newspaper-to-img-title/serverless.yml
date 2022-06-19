@@ -15,7 +15,19 @@ provider:
       Action:
         # IAM permissions needed for uploading files
         - 's3:PutObject'
+        - 's3:GetObject'
+        
       Resource: "arn:aws:s3:::clarin-image-bucket/*"
+    - Effect: Allow
+      Action:
+        - 'dynamodb:Query'
+        - 'dynamodb:Scan'
+        - 'dynamodb:GetItem'
+        - 'dynamodb:PutItem'
+        - 'dynamodb:UpdateItem'
+        - 'dynamodb:DeleteItem'
+      Resource: "arn:aws:dynamodb:us-east-1:768095478863:table/clarin_words"
+  
   
 
 package:
@@ -37,6 +49,10 @@ package:
     - opencv-layer 
     - ocr-layer/**
     - opencv-layer/**
+    - s3-extract-title-event.json
+    - env
+    - .env
+    - .env/**
 
 layers:
   OCR:
@@ -68,7 +84,7 @@ layers:
 functions:
   pull_image:
     handler: pull_image.pull_image
-    memorySize: 3000
+    memorySize: 128
     timeout: 15
     runtime: python3.9
     layers:
@@ -88,15 +104,24 @@ functions:
     layers:
       - {Ref: OCRLambdaLayer}
     events:
-      - http:
-          path: ocr
-          method: post
+      - s3:
+          bucket: clarin-image-bucket
+          events: s3:ObjectCreated:*
+          rules:
+            - prefix: titles/
+          existing: true
     package:
       include:
         - handler.py
+      exclude:
+        - opencv-handler.py
+        - pull_image.py
+        - stopwords_sp.txt
+    environment:
+      TABLE_WORDS: clarin_words
   opencv:
     handler: opencv-handler.detect_title
-    memorySize: 3008
+    memorySize: 512
     timeout: 15
     layers:
       - {Ref: OpencvLambdaLayer}
@@ -109,4 +134,5 @@ functions:
           event: s3:ObjectCreated:*
           rules:
             - prefix: front_pages/
+          existing: true
 
