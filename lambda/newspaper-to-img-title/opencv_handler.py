@@ -6,20 +6,9 @@ import cv2
 import boto3
 import numpy as np
 
-
-    
-def detect_title(event, context):
-    #print('OpenCV version:')
-    #print(cv2.cv2.version.opencv_version)
-    # first we obtain the path to the image from the event
-    img_path = event['Records'][0]['s3']['object']['key']
-    print(f'Image Path: {img_path}')
-    s3_arn = 'arn:aws:s3:::clarin-image-bucket'
-    # we obtain the image from s3
-    s3 = boto3.client('s3')
-    img_data = s3.get_object(Bucket='clarin-image-bucket', Key=img_path)['Body'].read()
+def local_detect_title(img_binary_data):
     # write the image to tmp
-    img_file = io.BytesIO(img_data)
+    img_file = io.BytesIO(img_binary_data)
     img_binary = img_file.getvalue()
     # read the image
     img = cv2.imdecode(np.frombuffer(img_binary, np.uint8), cv2.IMREAD_COLOR)
@@ -163,7 +152,21 @@ def detect_title(event, context):
             x2 = coords[0] + coords[2]
         if coords[1] + coords[3] > y2:
             y2 = coords[1] + coords[3]
-    #cv2.rectangle(img, (x,y), (x2,y2), (0,255,0), 3)
+    return [img, x,y,x2,y2]
+    
+def detect_title(event, context):
+    #print('OpenCV version:')
+    #print(cv2.cv2.version.opencv_version)
+    # first we obtain the path to the image from the event
+    img_path = event['Records'][0]['s3']['object']['key']
+    print(f'Image Path: {img_path}')
+    s3_arn = 'arn:aws:s3:::clarin-image-bucket'
+    # we obtain the image from s3
+    s3 = boto3.client('s3')
+    img_data = s3.get_object(Bucket='clarin-image-bucket', Key=img_path)['Body'].read()
+    
+    
+    img, x, y, x2, y2 = local_detect_title(img_data)
     #we extract the image, adding a bit of extra margin on the bottom for good measure
     title_img = img[y:(y2+20), x:x2]
     #write image in /tmp/
@@ -172,15 +175,4 @@ def detect_title(event, context):
     print(f"Imaged saved locally: {saved_to_disk}")
     # save image to s3 folder title
     s3.put_object(Bucket='clarin-image-bucket', Key=f"titles/{image_name}", Body=open(f"/tmp/{image_name}", 'rb'))
-    
-    
-    #body = {
-    #    "opencv_version": cv2.cv2.version.opencv_version
-    #}
-
-    #response = {
-    #    "statusCode": 200,
-    #    "body": json.dumps(body)
-    #}
-
     return True

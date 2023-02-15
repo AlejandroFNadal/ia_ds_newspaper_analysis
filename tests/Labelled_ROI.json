@@ -1,0 +1,920 @@
+{
+  "2020-03-03.jpg369529": {
+    "filename": "2020-03-03.jpg",
+    "size": 369529,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 26,
+          "y": 384,
+          "width": 657,
+          "height": 197
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2019-03-03.jpg352116": {
+    "filename": "2019-03-03.jpg",
+    "size": 352116,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 31,
+          "y": 548,
+          "width": 672,
+          "height": 192
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2018-03-03.jpg361974": {
+    "filename": "2018-03-03.jpg",
+    "size": 361974,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 31,
+          "y": 537,
+          "width": 672,
+          "height": 189
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2017-03-03.jpg446211": {
+    "filename": "2017-03-03.jpg",
+    "size": 446211,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 5,
+          "y": 340,
+          "width": 653,
+          "height": 206
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2016-03-03.jpg437176": {
+    "filename": "2016-03-03.jpg",
+    "size": 437176,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 28,
+          "y": 364,
+          "width": 917,
+          "height": 158
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2014-03-03.jpg362095": {
+    "filename": "2014-03-03.jpg",
+    "size": 362095,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 18,
+          "y": 922,
+          "width": 623,
+          "height": 160
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2013-03-03.jpg429689": {
+    "filename": "2013-03-03.jpg",
+    "size": 429689,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 27,
+          "y": 355,
+          "width": 712,
+          "height": 241
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2012-03-03.jpg353060": {
+    "filename": "2012-03-03.jpg",
+    "size": 353060,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 18,
+          "y": 351,
+          "width": 720,
+          "height": 275
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2011-03-03.jpg405523": {
+    "filename": "2011-03-03.jpg",
+    "size": 405523,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 18,
+          "y": 351,
+          "width": 726,
+          "height": 279
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2010-03-03.jpg374104": {
+    "filename": "2010-03-03.jpg",
+    "size": 374104,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 8,
+          "y": 350,
+          "width": 735,
+          "height": 299
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2009-03-03.jpg353762": {
+    "filename": "2009-03-03.jpg",
+    "size": 353762,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 20,
+          "y": 352,
+          "width": 915,
+          "height": 200
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2008-03-03.jpg343720": {
+    "filename": "2008-03-03.jpg",
+    "size": 343720,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 5,
+          "y": 360,
+          "width": 733,
+          "height": 280
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2007-03-03.jpg329359": {
+    "filename": "2007-03-03.jpg",
+    "size": 329359,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 23,
+          "y": 352,
+          "width": 721,
+          "height": 282
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2006-03-03.jpg368164": {
+    "filename": "2006-03-03.jpg",
+    "size": 368164,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 21,
+          "y": 346,
+          "width": 718,
+          "height": 281
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2005-03-03.jpg372103": {
+    "filename": "2005-03-03.jpg",
+    "size": 372103,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 13,
+          "y": 343,
+          "width": 741,
+          "height": 276
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2004-03-03.jpg411086": {
+    "filename": "2004-03-03.jpg",
+    "size": 411086,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 21,
+          "y": 346,
+          "width": 916,
+          "height": 196
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2003-03-03.jpg402091": {
+    "filename": "2003-03-03.jpg",
+    "size": 402091,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 23,
+          "y": 321,
+          "width": 901,
+          "height": 186
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2002-03-03.jpg403488": {
+    "filename": "2002-03-03.jpg",
+    "size": 403488,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 23,
+          "y": 364,
+          "width": 885,
+          "height": 216
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2001-03-03.jpg286919": {
+    "filename": "2001-03-03.jpg",
+    "size": 286919,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 31,
+          "y": 311,
+          "width": 911,
+          "height": 241
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "2000-03-03.jpg377476": {
+    "filename": "2000-03-03.jpg",
+    "size": 377476,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 31,
+          "y": 311,
+          "width": 898,
+          "height": 184
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1999-03-03.jpg389864": {
+    "filename": "1999-03-03.jpg",
+    "size": 389864,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 31,
+          "y": 306,
+          "width": 895,
+          "height": 189
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1998-03-03.jpg345143": {
+    "filename": "1998-03-03.jpg",
+    "size": 345143,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 36,
+          "y": 230,
+          "width": 601,
+          "height": 305
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1997-03-03.jpg322158": {
+    "filename": "1997-03-03.jpg",
+    "size": 322158,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 34,
+          "y": 230,
+          "width": 613,
+          "height": 381
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1996-03-03.jpg370897": {
+    "filename": "1996-03-03.jpg",
+    "size": 370897,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 28,
+          "y": 229,
+          "width": 896,
+          "height": 203
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1995-03-03.jpg390471": {
+    "filename": "1995-03-03.jpg",
+    "size": 390471,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 49,
+          "y": 195,
+          "width": 455,
+          "height": 351
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1994-03-03.jpg432294": {
+    "filename": "1994-03-03.jpg",
+    "size": 432294,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 35,
+          "y": 236,
+          "width": 595,
+          "height": 293
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1993-03-03.jpg369113": {
+    "filename": "1993-03-03.jpg",
+    "size": 369113,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 402,
+          "y": 206,
+          "width": 499,
+          "height": 402
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1992-03-03.jpg361503": {
+    "filename": "1992-03-03.jpg",
+    "size": 361503,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 37,
+          "y": 218,
+          "width": 434,
+          "height": 476
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1991-03-03.jpg387389": {
+    "filename": "1991-03-03.jpg",
+    "size": 387389,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 37,
+          "y": 169,
+          "width": 496,
+          "height": 320
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1990-03-03.jpg347261": {
+    "filename": "1990-03-03.jpg",
+    "size": 347261,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 39,
+          "y": 216,
+          "width": 847,
+          "height": 280
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1989-03-03.jpg313962": {
+    "filename": "1989-03-03.jpg",
+    "size": 313962,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 25,
+          "y": 161,
+          "width": 861,
+          "height": 171
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1988-03-03.jpg332633": {
+    "filename": "1988-03-03.jpg",
+    "size": 332633,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 62,
+          "y": 216,
+          "width": 881,
+          "height": 181
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1987-03-03.jpg389308": {
+    "filename": "1987-03-03.jpg",
+    "size": 389308,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 62,
+          "y": 181,
+          "width": 586,
+          "height": 289
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1986-03-03.jpg393571": {
+    "filename": "1986-03-03.jpg",
+    "size": 393571,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 324,
+          "y": 214,
+          "width": 601,
+          "height": 287
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1985-03-03.jpg415686": {
+    "filename": "1985-03-03.jpg",
+    "size": 415686,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 54,
+          "y": 228,
+          "width": 452,
+          "height": 336
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1984-03-03.jpg352017": {
+    "filename": "1984-03-03.jpg",
+    "size": 352017,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 40,
+          "y": 201,
+          "width": 868,
+          "height": 208
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1983-03-03.jpg361072": {
+    "filename": "1983-03-03.jpg",
+    "size": 361072,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 25,
+          "y": 159,
+          "width": 876,
+          "height": 191
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1982-03-03.jpg330525": {
+    "filename": "1982-03-03.jpg",
+    "size": 330525,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 67,
+          "y": 182,
+          "width": 838,
+          "height": 224
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1981-03-03.jpg321421": {
+    "filename": "1981-03-03.jpg",
+    "size": 321421,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 62,
+          "y": 30,
+          "width": 404,
+          "height": 382
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1980-03-03.jpg477728": {
+    "filename": "1980-03-03.jpg",
+    "size": 477728,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 47,
+          "y": 29,
+          "width": 556,
+          "height": 291
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1979-03-03.jpg375302": {
+    "filename": "1979-03-03.jpg",
+    "size": 375302,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 47,
+          "y": 42,
+          "width": 883,
+          "height": 203
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1978-03-03.jpg380967": {
+    "filename": "1978-03-03.jpg",
+    "size": 380967,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 71,
+          "y": 51,
+          "width": 859,
+          "height": 196
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1977-03-03.jpg384440": {
+    "filename": "1977-03-03.jpg",
+    "size": 384440,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 352,
+          "y": 25,
+          "width": 582,
+          "height": 194
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1976-03-03.jpg408946": {
+    "filename": "1976-03-03.jpg",
+    "size": 408946,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 76,
+          "y": 29,
+          "width": 872,
+          "height": 223
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1975-03-03.jpg442310": {
+    "filename": "1975-03-03.jpg",
+    "size": 442310,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 89,
+          "y": 33,
+          "width": 788,
+          "height": 98
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1974-03-03.jpg405060": {
+    "filename": "1974-03-03.jpg",
+    "size": 405060,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 18,
+          "y": 45,
+          "width": 928,
+          "height": 256
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1973-03-03.jpg437022": {
+    "filename": "1973-03-03.jpg",
+    "size": 437022,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 54,
+          "y": 33,
+          "width": 834,
+          "height": 205
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1972-03-03.jpg452550": {
+    "filename": "1972-03-03.jpg",
+    "size": 452550,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 16,
+          "y": 89,
+          "width": 899,
+          "height": 127
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1971-03-03.jpg473966": {
+    "filename": "1971-03-03.jpg",
+    "size": 473966,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 341,
+          "y": 31,
+          "width": 575,
+          "height": 196
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1970-03-03.jpg451142": {
+    "filename": "1970-03-03.jpg",
+    "size": 451142,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 62,
+          "y": 36,
+          "width": 832,
+          "height": 129
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1969-03-03.jpg457144": {
+    "filename": "1969-03-03.jpg",
+    "size": 457144,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 42,
+          "y": 65,
+          "width": 479,
+          "height": 190
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1968-03-03.jpg526910": {
+    "filename": "1968-03-03.jpg",
+    "size": 526910,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 0,
+          "y": 57,
+          "width": 709,
+          "height": 132
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1967-03-03.jpg488755": {
+    "filename": "1967-03-03.jpg",
+    "size": 488755,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 58,
+          "y": 24,
+          "width": 850,
+          "height": 129
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  },
+  "1966-03-03.jpg401687": {
+    "filename": "1966-03-03.jpg",
+    "size": 401687,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "rect",
+          "x": 40,
+          "y": 69,
+          "width": 865,
+          "height": 98
+        },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  }
+}
