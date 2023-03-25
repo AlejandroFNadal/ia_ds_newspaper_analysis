@@ -97,6 +97,10 @@ functions:
           cors: true
     environment:
       BUCKET: arn:aws:s3:::clarin-image-bucket
+    package:
+      include:
+        - pull_image.py
+
   ocr:
     handler: handler.ocr
     memorySize: 3008
@@ -106,7 +110,7 @@ functions:
     events:
       - s3:
           bucket: clarin-image-bucket
-          events: s3:ObjectCreated:*
+          event: s3:ObjectCreated:*
           rules:
             - prefix: titles/
           existing: true

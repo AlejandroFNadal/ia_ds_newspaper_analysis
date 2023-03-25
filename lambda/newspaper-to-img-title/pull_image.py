@@ -15,6 +15,8 @@ def pull_image(event, context):
     s3_arn = 'arn:aws:s3:::clarin-image-bucket'
     # generate datetime object from date string
     today = datetime.datetime.strptime(date, '%Y-%m-%d')
+    # substract 1 from today
+    today = today - datetime.timedelta(days=1)
     today_inverted = today.strftime('%d-%m-%Y')
     # url from clarin is:
     clarin_url= f'https://www.clarin.com/buscar-tapa-{today_inverted}.html'
@@ -42,7 +44,7 @@ def pull_image(event, context):
     img_binary = img_file.getvalue()
     # save img_binary to s3
     s3 = boto3.client('s3')
-    s3.put_object(Bucket='clarin-image-bucket', Key=f"front_pages/{today_inverted}.webp", Body=img_binary)
+    s3.put_object(Bucket='clarin-image-bucket', Key=f"front_pages/{today}.webp", Body=img_binary)
     
     
     return 0
